@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404page</title>
+    <link rel="stylesheet" href="/css/header.css" type="text/css">
+    <link rel="stylesheet" href="/css/text.css" type="text/css">
+    <style>
+        body {
+            background: url('/public/images/404.png')no-repeat 0 0;
+            text-align: center;
+        }
+
+        .title {
+            margin-top: 180px;
+            margin-bottom: 140px;
+            font-size: 80px !important;
+        }
+
+        .pageNum {
+            color: var(--text-color-text-default-2, #FFF);
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 78px;
+            /* 70.909% */
+            letter-spacing: -2.75px;
+            margin-bottom: 72px;
+        }
+
+        .info {
+            color: var(--text-color-text-default-2, #FFF);
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 78px;
+            /* 97.5% */
+            letter-spacing: -2px;
+        }
+        .ModelBtn {
+    width: 375px;
+    height: 64px;
+    border: 1px solid var(--Text-Color-Text_default2, #FFF);
+    background: var(--Text-Text_default, #1F1F1F);
+    color: #fff;
+    margin-top: 62px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+        @media screen and (min-width:768px) and (max-width:1387px) {
+            .title{
+                font-size: 3em;
+            }
+            .pageNum{
+                font-size: 4em;
+                margin-bottom: 30px;
+            }
+            .info{
+                font-size: 2em;
+            }
+
+        }
+
+        @media screen and (max-width:767px){
+            .title{
+                font-size: 3em;
+            }
+            .pageNum{
+                font-size: 4em;
+                margin-bottom: 30px;
+            }
+            .info{
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html"><p class="BMWH1 title">BMW</p></a>
+    <p class="pageNum">404</p>
+    <p class="info">페이지 준비 중입니다</p>
+    <button class="Body1Medium ModelBtn">
+        <a href="index.html">메인페이지로 돌아가기</a>
+    </button>
+</body>
+
+</html>

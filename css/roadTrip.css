@@ -1,0 +1,346 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/* @media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+} */
+
+
+#roadTrip {
+  margin-top: 230px;
+}
+
+@media screen and (max-width:767px) {
+  #roadTrip {
+    margin-top: 80px;
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.slider {
+  display: -webkit-box;
+  display: flex;
+  width: 500%;
+  /* height: 800px; */
+  -webkit-transition: all .25s ease-in;
+  transition: all .35s ease-in;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .slider {
+    height: 100vh;
+  }
+} */
+.slider .box {
+  height: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 650px) {
+  .slider .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.slider .box .bg {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 35%;
+  -webkit-transform: skewX(7deg);
+  transform: skewX(7deg);
+  position: absolute;
+  height: 100%;
+  left: -10%;
+  padding-left: 20rem;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .slider .box .bg {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .slider .box .bg {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 54%;
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+}
+
+.slider .box .bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+  pointer-events: none;
+  -webkit-transform: skewX(10deg);
+  transform: skewX(10deg);
+}
+
+@media only screen and (max-width: 650px) {
+  .slider .box .bg::before {
+    width: 120%;
+    bottom: 0;
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+}
+
+.slider .box .details {
+  padding: 5rem;
+  padding-left: 10rem;
+  z-index: 100;
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 650px) {
+  .slider .box .details {
+    grid-row: 2 / span 1;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    -webkit-transform: translateY(-9rem);
+    transform: translateY(-9rem);
+  }
+}
+
+.slider .box .details .roadTitle {
+  color: var(--Text-Color-Text_default2, #FFF);
+  font-family: Pretendard;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  /* 106.25% */
+  letter-spacing: -2px;
+}
+
+.slider .box .details .roadSub {
+  display: inline-block;
+  font-size: 14px;
+  color: #B5B4B4;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+
+
+
+
+.ModelBtn {
+  width: 210px;
+  height: 43px;
+  border: 1px solid var(--Text-Color-Text_default2, #FFF);
+  background: transparent;
+  color: #fff;
+  margin-top: 62px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* .slider .box .details button:hover {
+  opacity: .8;
+}
+.slider .box .details button:focus {
+  outline: none;
+  border: none;
+} */
+.slider .box .details button:hover,
+.slider .box .details button:focus {
+  /* background-color: #fff; */
+  color: #1f1f1f;
+  box-shadow: inset 0 -10em 0 0 #fff;
+  transition: 0.5s;
+}
+
+.slider .box1 {
+  background: url('../public/images/roadTrip04.png')no-repeat 0 0;
+}
+
+
+.slider .box2 {
+  background: url('../public/images/roadTrip05.png')no-repeat 0 0;
+}
+
+
+.slider .box3 {
+  background: url('../public/images/roadTrip02.png')no-repeat 0 0;
+}
+
+
+.slider .box4 {
+  background: url('../public/images/roadTrip01.png')no-repeat 0 0;
+}
+
+
+.slider .box5 {
+  background: url('../public/images/roadTrip06.png')no-repeat 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .slider .box .details .roadTitle {
+    font-size: 32px;
+    line-height: 36px;
+    /* 106.25% */
+  }
+
+  .slider .box .details p {
+    margin-right: 0;
+  }
+
+  .slider .box .details .roadSub {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+
+  .ModelBtn {
+    margin-top: 42px;
+  }
+  .slider .box1 {
+    background: url('../public/images/MroadTrip04.png')no-repeat 0 0;
+  }
+  
+  
+  .slider .box2 {
+    background: url('../public/images/MroadTrip05.png')no-repeat 0 0;
+  }
+  
+  
+  .slider .box3 {
+    background: url('../public/images/MroadTrip02.png')no-repeat 0 0;
+  }
+  
+  
+  .slider .box4 {
+    background: url('../public/images/MroadTrip01.png')no-repeat 0 0;
+  }
+  
+  
+  .slider .box5 {
+    background: url('../public/images/MroadTrip06.png')no-repeat 0 0;
+  }
+}
+
+
+
+.prev,
+.next,
+.trail {
+  z-index: 10000;
+  position: absolute;
+}
+
+.prev,
+.next {
+  width: 60px;
+  cursor: pointer;
+  opacity: .2;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .prev,
+  .next {
+    display: none;
+  }
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.prev {
+  top: 50%;
+  left: 2%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.next {
+  top: 50%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.trail {
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .trail {
+    width: 90%;
+    bottom: 0%;
+  }
+}
+
+.trail div {
+  margin-bottom: 76px;
+  /* padding: 2rem; */
+  border-top: 3px solid #fff;
+  cursor: pointer;
+  opacity: .3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.trail div:hover {
+  opacity: .6;
+}
+
+@media only screen and (max-width: 650px) {
+  .trail div {
+    padding: 1rem;
+  }
+  .active {
+    background: none;
+  }
+}
+
+.active {
+  opacity: 1 !important;
+}

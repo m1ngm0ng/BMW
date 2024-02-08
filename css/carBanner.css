@@ -1,0 +1,172 @@
+.TabTitle {
+    color: #DADADC;
+    font-family: BMWTypeNext Pro;
+    font-size: 146px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.65px;
+    text-align: center;
+    /* margin-top: 43px; */
+}
+@media screen and (max-width:767px){
+    .TabTitle {
+        font-size: 56px;
+    }
+}
+
+/*tab style*/
+#tab{
+    height: 770px;
+}
+.tab {
+    position: relative;
+    overflow: hidden;
+    /* border-bottom: 2px solid #D9D9D9; */
+    margin-top: 160px;
+    /* height: 770px; */
+}
+
+/* Style the inner tab */
+.tab-inner {
+    display: flex;
+    width: 242px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 0 auto;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+    /* width: 100px; */
+    display: inline;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #B3B5B7;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+/* Style the slider */
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/*Tab1 style*/
+.tabcontent p:first-child {
+    color: var(--text-color-text-sub, #5F6368);
+    padding-top: 90px;
+}
+
+.Tab1Content {
+    width: 954px;
+    height: 295px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+.MTab1Content{
+    display: none;
+}
+
+
+.Tab1Content>img {
+    position: absolute;
+    top: -210px;
+    left: -90px;
+}
+
+.bg {
+    width: 100%;
+    height: 396px;
+    background: #303033;
+    margin: 0 auto;
+}
+.bg .whiteBtn{
+    width: 130px;
+    height: 40px;
+    border: #1f1f1f;
+    background: #fff;
+    color: #1f1f1f;
+}
+.bg .BlackBtn{
+    width: 130px;
+    height: 40px;
+    border: #E1E3E4;
+    background: #1f1f1f;
+    color: #fff;
+}
+.button{
+    width: 265px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.carName {
+    color: var(--Text-Text_default2, var(--Text-Color-Text_default2, #FFF));
+    text-align: center;
+    font-family: BMWTypeNext Pro;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:767px){
+    #tab{
+        height: 580px;
+    }
+    .MTab1Content{
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .MTab1Content img{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .Tab1Content {
+        display: none;
+    }
+    .carName{
+        font-size: 26px;
+    }
+    .bg {
+        height: 266px;
+    }
+    .tab-inner{
+        margin-top: 30px;
+    }
+    
+}

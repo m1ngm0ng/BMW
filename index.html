@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/text.css" type="text/css">
+    <link rel="stylesheet" href="css/model.css" type="text/css">
+    <link rel="stylesheet" href="css/roadTrip.css" type="text/css">
+    <link rel="stylesheet" href="css/2024.css" type="text/css">
+    <link rel="stylesheet" href="css/service.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/icon.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-bundle.css" type="text/css">
+    <link href="https://db.onlinewebfonts.com/c/8655026d6b4cf5d57e9ec8b901865ddb?family=BMW+Type+Global+Regular"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var tg = $(this);
+            var subList = tg.find('>.sGnbArea>.submenu>li>a');
+
+            $('.menu>li>a').mouseover(function () {
+                $('.menu>li>a').not(this).css('color', '#616161');
+                $(this).css('color', '#fff');
+            });
+
+            subList.mouseover(function () {
+                $(this).css('color', '#fff');
+                $('.menu>li>a').not(this).css('color', '#616161');
+
+            });
+            $('#banner').mouseover(function () {
+                $(this).css('color', '#fff');
+                $('.menu>li>a').not(this).css('color', '#fff');
+            });
+            $('.menu-wrap').mouseleave(function () {
+                $(this).css('color', '#fff');
+                $('.menu>li>a').not(this).css('color', '#fff');
+            });
+
+        });
+    </script>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="header" class="deactive">
+        <div class="headerInner">
+
+            <div class="BMW">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="../public/images/bmw-logo.svg" alt="">
+                    </a>
+                </h1>
+                <div class="toggle">
+                    <img src="../public/images/hamburger.png" alt="">
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <ul class="menu" id="gnb">
+                    <li class="gnb_01 list1">
+                        <a href="#">모델</a>
+                        <div class="sGnbArea">
+                            <ul class="submenu sGnb_01" data-tit="모델">
+                                <li><a href="sub.html">BMW 1시리즈</a></li>
+                                <li><a href="sub.html">BMW 2시리즈</a></li>
+                                <li><a href="sub.html">BMW 3시리즈</a></li>
+                                <li><a href="sub.html">BMW 4시리즈</a></li>
+                                <li><a href="sub.html">BMW 5시리즈</a></li>
+                                <li><a href="sub.html">BMW 6시리즈</a></li>
+                                <li><a href="sub.html">BMW 7시리즈</a></li>
+                                <li><a href="sub.html">BMW 8시리즈</a></li>
+                                <li><a href="sub.html">BMW X레인지</a></li>
+                                <li><a href="sub.html">BMW Z4</a></li>
+                                <li><a href="sub.html">BMW M모델</a></li>
+                                <li><a href="sub.html">BMW 순수 전기차</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_02 list2">
+                        <a href="#">체험</a>
+                        <div class="sGnbArea">
+                            <ul class="submenu sGnb_02" data-tit="체험">
+                                <li><a href="404.html">내 차량 만들기</a></li>
+                                <li><a href="404.html">시승 신청</a></li>
+                                <li><a href="404.html">BMW 인디비주얼</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_03 list3">
+                        <a href="#">구매하기</a>
+                        <div class="sGnbArea">
+                            <ul class="submenu sGnb_03" data-tit="구매하기">
+                                <li><a href="404.html">BMW 공식 딜러 전시장</a></li>
+                                <li><a href="Interview.html">BMW 공식 인증 중고차</a></li>
+                                <li><a href="404.html">BMW 온라인 예약</a></li>
+                                <li><a href="404.html">BMW 월 납입금 계산기</a></li>
+                                <li><a href="404.html">BMW 커넥티드 드라이브 스토어</a></li>
+                                <li><a href="404.html">희망 차량 등록 알림</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_04 list4">
+                        <a href="#">프로모션</a>
+                        <div class="sGnbArea">
+                            <ul class="submenu sGnb_04" data-tit="프로모션">
+                                <li><a href="404.html">BMW 트레이드인/재구매</a></li>
+                                <li><a href="404.html">내 차 사기 혜택</a></li>
+                                <li><a href="404.html">내 차 판매 문의</a></li>
+                                <li><a href="404.html">내 차 팔기 혜택</a></li>
+                                <li><a href="404.html">법인판매</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_05 list5">
+                        <a href="#">BMW공식서비스</a>
+                        <div class="sGnbArea">
+                            <ul class="submenu sGnb_05" data-tit="BMW공식서비스">
+                                <li><a href="404.html">BMW 2024 캠페인</a></li>
+                                <li><a href="404.html">프로액티브 케어</a></li>
+                                <li><a href="404.html">공식 사고차 서비스</a></li>
+                                <li><a href="404.html">공식 서비스 센터</a></li>
+                                <li><a href="404.html">모빌리티 서비스</a></li>
+                                <li><a href="404.html">보증서 및 BSI 조회</a></li>
+                                <li><a href="404.html">케어 플러스</a></li>
+                                <li><a href="404.html">워런티 플러스</a></li>
+                                <li><a href="404.html">오리지널 액세서리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconNav">
+                <a href="404.html">고객센터</a>
+                <a href="404.html">마이페이지</a>
+                <a href="404.html"><img src="./public/images/search.svg" alt="search"></a>
+            </div>
+        </div>
+    </div><!--header end-->
+
+
+    <script src="./js/header.js"></script>
+
+    <section id="banner">
+        <div class="bannerInner reveal reveal_BTT" data-delay="0.1">
+            <p class="H1Regular">
+                <span>i5</span>
+                순수전기 BMW 뉴 5시리즈
+            </p>
+            <button class="Body1Medium bannerBtn">자세히 보기</button>
+        </div>
+        <div class="videoBanner">
+            <video src="public/images/banner2.mp4" type="video/mp4" autoplay loop muted></video>
+            <video src="public/images/Mobilebanner2.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+
+    </section>
+    <section id="icons">
+        <p class="H1Regular reveal reveal_TTB" data-delay="0.2">지금 바로 BMW를 경험해보세요</p>
+        <div class="iconsWrap">
+            <div class="icon reveal reveal_TTB" data-delay="0.12">
+                <img src="./public/images/estimate.gif" alt="" width="40" height="40">
+                <p class="H3SemiBold">견적 보기 </p>
+                <a href="#">바로가기</a>
+            </div>
+            <div class="icon reveal reveal_TTB" data-delay="0.15">
+                <img src="./public/images/testDrive.gif" alt="" width="40" height="40">
+                <p class="H3SemiBold">시승 신청</p>
+                <a href="#">바로가기</a>
+            </div>
+            <div class="icon reveal reveal_TTB" data-delay="0.12">
+                <img src="./public/images/myCar.gif" alt="" width="40" height="40">
+                <p class="H3SemiBold">내 차량 만들기</p>
+                <a href="#">바로가기</a>
+            </div>
+            <div class="icon reveal reveal_TTB" data-delay="0.15">
+                <img src="./public/images/onlineShop.gif" alt="" width="40" height="40">
+                <p class="H3SemiBold">BMW 온라인 샵</p>
+                <a href="#">바로가기</a>
+            </div>
+        </div>
+    </section><!--icons end-->
+    <section id="Micons">
+        <p class="H1Regular reveal reveal_TTB" data-delay="0.2">지금 바로 BMW를 경험해보세요</p>
+        <ul class="iconsWrap">
+            <li class="icon reveal reveal_TTB" data-delay="0.12">
+                <div class="">
+                    <img src="./public/images/estimate.gif" alt="" width="48" height="48">
+                </div>
+
+                <a href="#" class="H3SemiBold">견적 보기</a>
+            </li>
+            <li class="icon reveal reveal_TTB" data-delay="0.15">
+                <div class="">
+                    <img src="./public/images/testDrive.gif" alt="" width="48" height="48">
+                </div>
+
+                <a href="#" class="H3SemiBold">시승 신청</a>
+            </li>
+            <li class="icon reveal reveal_TTB" data-delay="0.12">
+                <div class="">
+                    <img src="./public/images/myCar.gif" alt="" width="48" height="48">
+                </div>
+                <a href="#" class="H3SemiBold">내 차량 만들기</a>
+            </li>
+            <li class="icon reveal reveal_TTB" data-delay="0.15">
+                <div class="">
+                    <img src="./public/images/onlineShop.gif" alt="" width="48" height="48">
+                </div>
+                <a href="#" class="H3SemiBold">BMW 온라인 샵</a>
+            </li>
+        </ul>
+    </section>
+    <section id="ourModelSwiper"> <!--css 변경-->
+        <p class="Title4 reveal reveal_TTB" data-delay="0.12">Our Model</p>
+        <p class="Body1Medium reveal reveal_TTB" data-delay="0.08">역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 BMW의 라인업을 살펴보세요</p>
+
+        <swiper-container class="ourModel reveal reveal_LTR" data-delay="0.1" pagination="true"
+            pagination-clickable="true" space-between="14" slides-per-view="3">
+            <swiper-slide>
+                <p class="H1Regular">BMW 2시리즈</p>
+                <img src="./public/images/model01.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">i5</p>
+                <img src="./public/images/model02.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M5</p>
+                <img src="./public/images/model03.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M2</p>
+                <img src="./public/images/model04.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M4</p>
+                <img src="./public/images/model05.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">X7</p>
+                <img src="./public/images/model06.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">X5</p>
+                <img src="./public/images/model07.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">BMW 5시리즈</p>
+                <img src="./public/images/model08.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </swiper-container>
+    </section>
+    <section id="MourModelSwiper"> <!--css 변경-->
+        <p class="Title4 reveal reveal_TTB" data-delay="0.12">Our Model</p>
+        <p class="Body1Medium reveal reveal_TTB" data-delay="0.08">역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 BMW의 라인업을 살펴보세요</p>
+
+        <swiper-container class="ourModel reveal reveal_LTR" data-delay="0.1" pagination="false"
+            pagination-clickable="false" space-between="14" slides-per-view="1">
+            <swiper-slide>
+                <p class="H1Regular">BMW 2시리즈</p>
+                <img src="./public/images/model01.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">i5</p>
+                <img src="./public/images/model02.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M5</p>
+                <img src="./public/images/model03.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M2</p>
+                <img src="./public/images/model04.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">M4</p>
+                <img src="./public/images/model05.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">X7</p>
+                <img src="./public/images/model06.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">X5</p>
+                <img src="./public/images/model07.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+            <swiper-slide>
+                <p class="H1Regular">BMW 5시리즈</p>
+                <img src="./public/images/model08.png" alt="BMW 2시리즈">
+                <button class="Body1Medium ModelBtn">자세히 보기</button>
+            </swiper-slide>
+        </swiper-container>
+    </section>
+
+    <section id="roadTrip"><!--css 변경-->
+        <div class="container">
+            <div class="slider">
+
+                <div class="box1 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <p class="roadTitle">BMW 오프로드 트립</p>
+                        <p class="roadSub Body3Medium">
+                            자유롭고 모험적인 오프로드 경험을 위한 완벽한 동반자. BMW의 강인한 차량과 전문적인 가이드로 더욱 특별한 모험을 즐기세요.
+                        </p>
+                        <button class="Body1Medium ModelBtn">더 알아보기</button>
+                    </div>
+                </div>
+
+
+                <div class="box2 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <p class="roadTitle"><span class="BMWH1">Hofmeister kink</span><br>: 클래식 스포츠카</p>
+                        <p class="roadSub Body3Medium">
+                            BMW 호프마이스터 킹크는 전설적인 고성능 스포츠카로, 아름다운 디자인과 역동적인 주행 성능을 자랑합니다. 호프마이스터 킹크는 BMW의 스포츠카 역사를
+                            대표하는 모델 중 하나입니다.
+                        </p>
+                        <button class="Body1Medium ModelBtn">더 알아보기</button>
+                    </div>
+                </div>
+
+                <div class="box3 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <p class="roadTitle">BMW 인디비주얼</p>
+                        <p class="roadSub Body3Medium">
+                            BMW 인디비주얼은 세련된 디자인 요소들로 구성되어, BMW 차량의 외관을 독특하고 매혹적으로 만듭니다. 선명한 조명 시그니처, 우아한 그릴 디자인, 유려한
+                            바디 라인 등이 조화를 이루어, 도로 위에서 눈에 띄는 차량으로 인상을 남깁니다.
+                        </p>
+                        <button class="Body1Medium ModelBtn">더 알아보기</button>
+                    </div>
+                </div>
+
+                <div class="box4 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <p class="roadTitle">BMW 로드트립</p>
+                        <p class="roadSub">
+                            BMW 로드트립으로 더욱 멋진 여행을 즐기세요. 우리와 함께라면 탁월한 주행 경험과 아름다운 풍경이 여러분을 기다립니다.
+                        </p>
+                        <button class="Body1Medium ModelBtn">더 알아보기</button>
+                    </div>
+                </div>
+
+                <div class="box5 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <p class="roadTitle">Driving Center 프로그램 예약</p>
+                        <p class="roadSub">
+                            BMW Driving Center에서 진행되는 프로그램을 예약하고 직접 몰아보세요. 전문강사와 함께하는 BMW 주행 경험은 진정한 운전의 즐거움을 선사합니다.
+                        </p>
+                        <button class="Body1Medium ModelBtn">더 알아보기</button>
+                    </div>
+                </div>
+
+            </div>
+            <img src="./public/images/arrowLeft.svg" alt="" class="prev">
+            <img src="./public/images/arrowRight.svg" alt="" class="next">
+
+
+            <div class="trail">
+                <div class="box1 active"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="BMW2024">
+        <div class="BMW2024" id="parallax__cont">
+            <img class="reveal reveal_TTB" src="./public/images/2024Pic.png" alt="" data-delay="0.2">
+            <div class="NewText reveal reveal_TTB" data-delay="0.25">
+                <p class="BMWH1">BMW2024</p>
+                <p class="H3Regular">2024 신형 전기수소차를
+                    먼저 만나보세요</p>
+                <p class="Body2Medium" style="text-decoration-line: underline;">시승신청</p>
+            </div>
+            <img class="reveal reveal_TTB" data-delay="0.3" src="./public/images/2024Pic02.png" alt="">
+        </div>
+    </section>
+    <section id="awards"></section>
+
+    <section id="twoSection">
+        <div class="twoLeft" onclick="">
+            <div class="twoWrap bg-one">
+                <p class="Title3">BMW 공식 딜러 전시장</p>
+                <p class="Body2Medium">
+                    다양한 BMW 차량을 만나보세요. 최신 모델부터 인기 있는 시리즈까지 다양한 선택지를 제공합니다.
+                    전문 상담사들이 항상 여러분을 위해 준비되어 있으니
+                    방문해주시면 성실하고 전문적인 서비스를 경험하실 수 있습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="twoLeft right" onclick="">
+            <div class="twoWrap bg-two">
+                <p class="Title3">My BMW 앱</p>
+                <p class="Body2Medium">
+                    MY BMW 앱으로 BMW 차량을 편리하게 관리하세요.
+                    차량 상태 모니터링, 원격 제어, 서비스 예약, 충전소 위치 찾기, 주행 기록 분석 등
+                    다양한 기능을 제공합니다. BMW 차량과의 깊은 연결을 통해 최고의 운전 경험을 즐겨보세요.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="service"> <!--css 변경-->
+        <p class="serviceTitle reveal reveal_TTB" data-delay="0.2">BMW 공식 서비스</p>
+        <p class="H3Regular reveal reveal_TTB" style="color: #E1E3E4;" data-delay="0.1">
+            다양한 BMW 공식 서비스를 만나보세요</p>
+        <div class="serviceWrap">
+            <div class="serviceInner reveal reveal_TTB" data-delay="0.3">
+                <div class="serviceName">
+                    <p class="H1Regular">공식 서비스 센터</p>
+                    <img src="./public/images/arrow.svg" alt="">
+                </div>
+                <img src="./public/images/service01.png" alt="">
+                <p class="Body2Medium">전문 상담사들이 항상 여러분을 위해 준비되어 있으니
+                    방문해주시면 성실하고 전문적인 서비스를 경험하실 수 있습니다.</p>
+            </div>
+            <div class="serviceInner reveal reveal_TTB" data-delay="0.35">
+                <div class="serviceName">
+                    <p class="H1Regular">보증서 및 BSI 조회</p>
+                    <img src="./public/images/arrow.svg" alt="">
+                </div>
+                <img src="./public/images/service02.png" alt="">
+                <p class="Body2Medium">BMW 공식 웹사이트에서 차량의 보증 정보와 BMW 서비스 인클루시브(BSI) 패키지 상세 내역을 손쉽게 조회할 수 있습니다. </p>
+            </div>
+            <div class="serviceInner reveal reveal_TTB" data-delay="0.4">
+                <div class="serviceName">
+                    <p class="H1Regular">오리지널 액세서리</p>
+                    <img src="./public/images/arrow.svg" alt="">
+                </div>
+                <img src="./public/images/service03.png" alt="">
+                <p class="Body2Medium">다양한 BMW 차량을 만나보세요. 최신 모델부터 인기 있는
+                    시리즈까지 다양한 선택지를 제공합니다. </p>
+            </div>
+        </div>
+    </section>
+    <section id="campaign">
+        <div class="campaignInner reveal reveal_BTT" data-delay="0.1">
+            <p class="BMWH1">#WhateverHappens</p>
+            <p class="H3Regular">캠페인</p>
+            <button class="Body1Medium ModelBtn">자세히 보기</button>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer Body2Medium">
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#" style="color: #0093FF;">개인정보 처리방침</a></li>
+            <li><a href="#">저작권 안내</a></li>
+            <li><a href="#">보증안내</a></li>
+            <li><a href="#">자동차 교환 및 환불 중재 규정 안내</a></li>
+            <li><a href="#">하자 재발 통보 안내</a></li>
+        </ul>
+        <div class="footerLogo">
+            <img src="./public/images/bmw-logo-3.svg" alt="">
+        </div>
+        <P class="Body3Medium">
+            Copyright 2023 BMW Motor Company.<br>
+            All Rights Reserved.
+        </P>
+    </footer>
+    <script>
+
+    </script>
+    <script>
+
+
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function openSubmenu() {
+            document.getElementsByClassName("submenu").style.height = "100%";
+        }
+
+        function closeSubmenu() {
+            document.getElementsByClassName("submenu").style.height = "0%";
+        }
+        document.querySelectorAll('.navbar-content a').forEach((item) => {
+            item.addEventListener('click', event => {
+                let submenu = event.target.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    if (submenu.style.display === 'none' || submenu.style.display === '') {
+                        submenu.style.display = 'block';
+                    } else {
+                        submenu.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script src="./js/roadTrip.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+        const hide = (item) => {
+            gsap.set(item, { autoAlpha: 0 });
+        }
+
+        const ani = (item) => {
+            let x = 0;
+            let y = 0;
+            let delay = item.dataset.delay;
+
+            if (item.classList.contains("reveal_LTR")) {
+                x = -100,
+                    y = 0
+            } else if (item.classList.contains("reveal_BTT")) {
+                x = 0,
+                    y = 100
+            } else if (item.classList.contains("reveal_TTB")) {
+                x = 0,
+                    y = -100
+            } else {
+                x = 100,
+                    y = 0;
+            }
+
+            gsap.fromTo(item,
+                { autoAlpha: 0, x: x, y: y },
+                { autoAlpha: 1, x: 0, y: 0, delay: delay, duration: 1.25, overwrite: "auto", ease: "expo" }
+            );
+        };
+
+        gsap.utils.toArray(".reveal").forEach(item => {
+            hide(item);
+
+            ScrollTrigger.create({
+                trigger: item,
+                start: "top 90%",
+                end: "bottom 10%",
+                toggleActions: "play pause reverse pause",
+                markers: false,
+                scrub: 0.6,
+                onEnter: () => { ani(item) }
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function () {
+            // 스크롤 시 header fade-in
+            $(document).on('scroll', function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#header").removeClass("deactive");
+                    $("#header").addClass("active");
+                } else {
+                    $("#header").removeClass("active");
+                    $("#header").addClass("deactive");
+                }
+            })
+
+        });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    <script src="./js/swiper.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script>
+
+        $('.seeAll').click(function () {
+            $('#show').addClass('show');
+        });
+
+
+    </script>
+</body>
+
+</html>

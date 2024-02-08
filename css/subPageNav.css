@@ -1,0 +1,142 @@
+.subNavWrap {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    margin-top: 80px;
+}
+.subNavWrapFixed{
+    position: fixed;
+    top: -14px;
+    z-index: 1000000;
+}
+.subNavagtion {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .subNavagtion>button {
+    width: 130px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid var(--Text-Text_sub, #5F6368);
+    background: #010205;
+    color: #fff;
+} */
+.subNavagtion>button {
+    width: 210px;
+    height: 43px;
+    border: 1px solid var(--Text-Color-Text_default2, #FFF);
+    background: transparent;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 100;
+}
+.subNavagtion>button:hover,
+.subNavagtion>button:focus {
+    color: #1f1f1f;
+    box-shadow: inset 0 -10em 0 0 #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.subNav {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+    line-height: 60px;
+}
+
+.subNav li {
+    float: left;
+}
+.subNav li:active a{
+    color: #0093FF;
+}
+#section1 {
+    width: 1920px;
+    margin: 0 auto;
+    height: 900px;
+    background: url('../public/images/DesignBanner.png')no-repeat 0 0;
+    position: relative;
+}
+.section1Wrap{
+    width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.sectionTitle {
+    color: var(--Text-Color-Text_default2, #FFF);
+    font-family: Pretendard;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2px;
+    position: relative;
+    margin-left: 250px;
+    padding-top: 120px;
+}
+
+.sectionSub {
+    padding-left: 10px;
+    /* text-indent: 10px; */
+    position: relative;
+    margin-left: 250px;
+    width: 480px;
+    margin-top: 24px;
+
+}
+
+.sectionSub::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+.designImg{
+    position: absolute;
+    right: 0;
+    top: 320px;
+}
+@media screen and (max-width:767px){
+    .subNavWrap{
+        display: none;
+    }
+    #section1{
+        width: 100%;
+        height: 600px;
+    }
+    .section1Wrap{
+        width: 91.8%;
+        margin: 0 auto;
+    }
+    .sectionTitle{
+        font-size: 42px;
+        margin-left: 0;
+        padding-top: 60px;
+    }
+    .sectionSub{
+        margin-left: 0;
+        width: 100%;
+    }
+    .sectionSub::before {
+        height: 100%;
+    }
+    .designImg{
+        top: 280px;
+    }
+    .designImg>img{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}

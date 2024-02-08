@@ -1,0 +1,186 @@
+#BMW2024 {
+    margin-top: 260px;
+}
+
+.BMW2024 {
+    display: flex;
+    width: 1920px;
+    gap: 144px;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.BMW2024 img:last-child {
+    position: absolute;
+    left: 847px;
+    top: 570px;
+}
+
+.NewText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+/*2024 media query*/
+@media screen and (max-width:767px){
+    #BMW2024 {
+        margin-top: 80px;
+    }
+    .BMW2024{
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .BMW2024 img{
+        width: 100%;
+    }
+    .BMW2024 img:last-child{
+        display: none;
+    }
+    .NewText{
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/*twoSection style*/
+#twoSection {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 480px;
+    width: 1920px;
+}
+
+.right {
+    float: right !important;
+}
+
+/* Image zoom on hover + Overlay colour */
+.twoLeft {
+    width: 938px;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.twoWrap {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    position: relative;
+}
+
+
+
+/* Several different images */
+.bg-one {
+    background: url('../public/images/official01-1.png')no-repeat 0 0;
+}
+
+.bg-two {
+    background: url('../public/images/official02-1.png')no-repeat 0 0;
+}
+
+.twoWrap p {
+    position: absolute;
+    font-weight: 400 !important;
+    /* display: none; */
+}
+
+.twoWrap p:first-child {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 600px;
+    margin: 294px 0 0 140px;
+    /*text-decoration: none;*/
+}
+
+.twoWrap p:last-child {
+    top: 360px;
+    left: 140px;
+    cursor: pointer;
+    width: 600px;
+    margin-top: 16px;
+    /*text-decoration: none;*/
+}
+
+.twoLeft:hover .twoWrap,
+.twoLeft:focus .twoWrap {
+    transform: scale(1.1);
+}
+
+.twoLeft:hover .twoWrap:before,
+.twoLeft:focus .twoWrap:before {
+    display: block;
+}
+
+.twoLeft:hover p,
+.twoLeft:focus p {
+    display: block;
+}
+
+.twoWrap:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+/* two wrap Media Queries */
+@media screen and (max-width:767px) {
+    #twoSection {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    #twoSection .twoWrap p:first-child {
+        width: 100%;
+        /*text-decoration: none;*/
+        margin: 26px 20px;
+        font-size: 32px;
+        font-weight: 200;
+    }
+
+    #twoSection .twoWrap {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #twoSection .twoWrap p:last-child {
+        top: 95px;
+        left: 20px;
+        width: 92%;
+        margin-top: 0;
+    }
+    .twoLeft {
+        width: 100%;
+        margin: 20px 0px
+    }
+
+    .wrapper {
+        padding: 20px 20px;
+    }
+    .bg-one {
+        background: url('../public/images/mobileofficial01-1.png')no-repeat 0 0;
+    }
+    
+    .bg-two {
+        background: url('../public/images/mobileofficial02-1.png')no-repeat 0 0;
+    }
+}
+
